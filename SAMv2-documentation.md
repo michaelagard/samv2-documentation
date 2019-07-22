@@ -6,7 +6,7 @@ SAMv2 is an autopilot navagation manager that allows your ships to dock to multi
 
 ### List of components:
 | Ship Component | Description |
-|-|-|
+| :--- | :--- |
 | Remote Controller   | This will allow SAM to control your ship during an auto-docking proceedure. |
 | Camera              | The cameras will aid in your ship automatically navigating obsitacls. Ideally you will have 3: one facing UP, FRONT & DOWN. Avoid that they are obstructed by other blocks in the ship. |
 | LCD Panel           | The screen is primarily used for the sys log to get your ship SAM ready. The screen is not required once you've configured everything. |
@@ -15,7 +15,7 @@ SAMv2 is an autopilot navagation manager that allows your ships to dock to multi
 | Antenna 			      | Important as this allows the ship to learn about Connectors in other grids. |
 
 | Station Component | Description |
-|-|-|
+| :--- | :--- |
 | Programmable block	| The programmable block is used to hold the SAMv2 script. Stored variables are able to be edited here. More on that later. |
 | Connector 			    | The station will require one for docking to take place. You can have multiple though with advanced configurations. |
 | Antenna 				    | Important as this allows the Station to advertise its connectors to other grids. However this block does not need to be tagged. Make sure it has enable broadcast set. |
@@ -70,7 +70,7 @@ SAM.LOG
 To use these commands, run the Programmable block SAMv2 script with these arguments:
 ### Menu
 | Command | Description |
-|-|-|
+| :--- | :--- |
 | `PREV`                  | Previous item. |
 | `NEXT`                  | Next item. |
 | `SELECT`                | Select the existing item (for Configuration screen). |
@@ -78,14 +78,14 @@ To use these commands, run the Programmable block SAMv2 script with these argume
 
 ### Waypoint
 | Command | Description |
-|-|-|
+| :--- | :--- |
 | `ADD`                   | Adds the present ship position as an entry. Good as a Waypoint. |
 | `ADD STANCE`            | Adds the present ship position and orientation as an entry. |
 | `REMOVE`                | Removes entries added with the ADD command and old docks that have stopped being advertised (have a ? before them) |
 
 ### Auto Navigation
 | Command | Description |
-|-|-|
+| :--- | :--- |
 | `START`                 | Starts navigation to the selected dock in the Navigation screen. |
 | `START PREV`            | Selects the previous dock in the Navigation screen and Starts navigation. |
 | `START NEXT`            | Selects the next dock in the Navigation screen and Starts navigation. |
@@ -96,18 +96,18 @@ To use these commands, run the Programmable block SAMv2 script with these argume
 
 ### Maintenance
 | Command | Description |
-|-|-|
+| :--- | :--- |
 | `CLEARSTORAGE` | Clears storage, requires the program block to recompile. |
 | `CLEARLOG` | Clears the Log. |
 
 ## Text Pannels
 Text panels can be used for viewing the log, navigation, and configuration screen. To access these screens, use either one of the following block name or custom data tags.
 | Block name TAG | Custom data TAG | Description |
-|-|-|-|
-| `[SAM LOG]` | `SAM.LOG` | Shows the log. |
-| `[SAM NAV]` | `SAM.NAV` | Shows the NAV screen. |
-| `[SAM CONF]` | `SAM.CONF` | Shows the configuration screen. |
-| `[SAM OVR]` | `SAM.OVR` | Allows you to override the font size and style. |
+| :--- | :--- | :--- |
+| `[SAM LOG]`   | `SAM.LOG`   | Shows the log. |
+| `[SAM NAV]`   | `SAM.NAV`   | Shows the NAV screen. |
+| `[SAM CONF]`  | `SAM.CONF`  | Shows the configuration screen. |
+| `[SAM OVR]`   | `SAM.OVR`   | Allows you to override the font size and style. |
 
 
 ## Path docking
@@ -117,7 +117,7 @@ You can use LCD screens with an attribute named "Name" with the same value as th
 Notifications can be sent to timer blocks when certain actions are accomplished. Tag your timers with:
 
 | Block name TAG | Description |
-|-|-|
+| :--- | :--- |
 | `[SAM DOCKED]`    | Starts the timer when the ship docks. |
 | `[SAM NAVIGATED]` | Starts the timer when the ship finishes navigation. |
 
