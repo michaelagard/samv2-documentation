@@ -102,6 +102,7 @@ To use these commands, run the Programmable block SAMv2 script with these argume
 
 ## Text Pannels
 Text panels can be used for viewing the log, navigation, and configuration screen. To access these screens, use either one of the following block name or custom data tags.
+
 | Block name TAG | Custom data TAG | Description |
 | :--- | :--- | :--- |
 | `[SAM LOG]`   | `SAM.LOG`   | Shows the log. |
