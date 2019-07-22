@@ -115,6 +115,7 @@ You can use LCD screens with an attribute named "Name" with the same value as th
 
 ## Timer Notifications
 Notifications can be sent to timer blocks when certain actions are accomplished. Tag your timers with:
+
 | Block name TAG | Description |
 |-|-|
 | `[SAM DOCKED]`    | Starts the timer when the ship docks. |
